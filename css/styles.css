@@ -1,0 +1,814 @@
+/* ----- сброс ----- */
+html, body, div, span, h1, h2, h3, h4, h5, h6, p, em, img, strong, sub, sup, b, u, i,  dl, dt, dd, ol, ul, li, fieldset, form, label, table, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary, time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	outline: 0;                               /* обнуляем отступы и убираем бордюры */
+	vertical-align: baseline;          /* приводим все к одной базовой линии */
+	background: transparent;      /* чтобы не проскакивали левые фоны, установленные по умолчанию */
+	font-size: 100%;                     /* размер шрифта всем одинаковый */
+}
+a {                                      	     /* ссылка не в общем списке чтобы не сбрасывать outline по умолчанию */
+	margin:0;
+	padding:0;
+	font-size:100%;
+	vertical-align:baseline;
+	background:transparent;
+	outline:none;
+}
+table {						/* устраняем отступы между ячейками таблицы */
+	border-collapse: collapse; 
+	border-spacing: 0;
+}
+td, td img {
+	vertical-align: top;			/* возвращаем привычное вертикальное выравнивание */
+} 
+input, select, button, textarea {
+	margin: 0; 				/* убираем отступы по умолчанию для элементов форм (в частности для checkbox и radio) */
+	font-size: 100%; 			/* делаем размер шрифтов везде одинаковым */
+	outline: none;
+}
+
+input[type="checkbox"] { 		/* вертикальное выравнивание чекбоксов и радиобатонов относительно меток */
+	vertical-align: bottom;
+}
+input[type="radio"] {
+	vertical-align: text-bottom;
+}
+sub {
+	vertical-align: sub;
+	font-size: smaller;
+}
+sup {
+	vertical-align: super;
+	font-size: smaller;
+}
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+	display:block;
+}
+nav ul {
+	 list-style:none;
+}
+/* ----- /сброс ----- */
+
+/* ----- базовые настройки ----- */
+html {
+	min-height:100%; 
+}
+body {
+	background: #333;
+	color: #828282;
+	text-align: left;
+	font-size: 1em; 
+	min-height:100%;
+	font-family: 'Times New Roman', Times, serif;
+}
+a, a:visited {
+	color: #d2a739;
+	text-decoration: underline;
+}
+a:hover {
+	color: #ff0000;
+	text-decoration:none;
+}
+a:focus, a:active {
+	color: #ff0000;
+	text-decoration: underline;
+}
+h1, h2, h3, h4, h5, h6{
+	font-weight:normal;
+}
+img{
+
+	max-width:100%;
+}
+.clr{
+	clear:both;
+}
+.clearfix:after {
+    clear: both;
+    content: "";
+    display: table;
+}
+/* ----- /базовые настройки ----- */
+
+
+.head-0{
+	background: rgba(7, 7, 7, 0.3);
+	position: fixed;
+	z-index: 200;
+	width: 100%;
+}
+.main-top{
+	max-width:1166px; 
+	margin:0 auto; 
+}
+.header-t{
+	padding:25px 0 20px 0;
+}
+.asus{
+	float:left;
+}
+.header-b{
+	padding:11px 0;
+}
+.menu{
+	float:right;
+}
+.menu li{
+	float:left; 
+	margin-right:28px; 
+	font-size:0.875em; 
+	text-transform:uppercase;
+}
+.menu li a{
+	text-decoration:none; 
+	color:#fff; 
+	font-weight:750;
+}
+.menu li a:hover{
+	color:#eb0524;
+	border-bottom: 1px solid #fff;
+	padding-bottom: 3px;
+}
+.activ{
+border-bottom: 1px solid #fff;
+color: #fff;
+}
+
+	/* Слайдер */
+
+.unslider-nav{
+	max-width:1166px; 
+	margin: -19px auto 0 auto; 
+	position:relative; 
+	top:-20px;
+}
+.clider-cover{
+	position: absolute;
+	max-width: 1000px;
+	left: 33%;
+	top: 30%;
+}
+.my-slider ul li{
+	position:relative;
+	border-bottom: 1px solid rgb(128, 0, 0);
+	font-size: 0;
+}
+.my-slider ul li h1{
+		color:#d2a739; 
+		font-size:55px; 
+		margin-bottom: 20px;
+		margin-left: 80px;
+}
+.my-slider ul li p{
+	color:#00a8ff; 
+	font-size:28px; 
+	margin-left: 40px;
+	left:100px; 
+	top:250px;
+}
+.my-slider ul li span{
+	color:#fff; 
+	font-size:18px; 
+	margin-top: 15px;
+	display: block;
+}
+.my-slider ul li img{
+	width: 100%;
+}
+.download-top{
+	color: #fff;
+	border: 3px solid #fff;
+	font-size:18px; 
+	font-weight: 500;
+	padding: 18px 45px;
+	border-radius: 5px;
+	text-decoration: none;
+	margin-top: 40px;
+	margin-left: 100px;
+	display: table;
+}
+a:hover.download-top{
+	border: 3px solid #00a8ff
+}
+
+/* Что-то новое о фильме */
+
+.main-middle3-all{
+	background: #333;
+	border-bottom: 2px solid #828282;
+	padding: 50px 0 40px 0;
+}
+.main-middle3-all h3{
+	color: #d2a739;
+	font-size: 1.25em;
+	text-align: center;
+}
+.main-middle3-all hr{
+	width: 50%;
+	height: 2px;
+	margin: 15px auto;
+	border: 0;
+	background: linear-gradient(to right, rgba(210,167,57,0)0%, rgba(210,167,57,0.7)50%, rgba(210,167,57,0)100%);
+}
+.main-middle3-all h2{
+	color: #828282;
+	font-size: 2.1875em;
+	text-align: center;
+	margin-bottom: 50px;
+}
+.main-middle3 article a img{
+	margin:0 auto 18px auto; 
+	display:block;
+}
+.main-middle3 article a:hover img{
+	opacity: 0.8;
+}
+.main-middle3 article a:hover{
+	color:#828282; 
+	text-decoration:none;
+}
+.main-middle3 article{
+	width:32.07%; 
+	float:left; 
+	margin-right:1.895%; 
+}
+.main-middle3 article:last-child{
+	margin-right:0; 
+}
+.main-middle3 article a{
+	font-size:1.25em;
+	text-transform: uppercase;
+}
+.main-middle3 article a:hover{
+	color:#00a8ff; 
+}
+.main-middle3 article p{
+	font-size:0.75em;
+	text-align: center;
+	line-height: 1.6;
+}
+.gold-text{
+	font-size:1.5em;
+	color:#d2a739;
+}
+.main-middle3 article h2{
+	font-size:1.40625em; 
+	margin-bottom:10px; 
+}
+.main-middle3{
+	margin:10px auto 45px auto;
+}
+/*      Актеры        */
+
+.main-middle4-section h3{
+	color: #d2a739;
+	font-size: 1.25em;
+	text-align: center;
+}
+.main-middle4-section hr{
+	width: 50%;
+	height: 2px;
+	margin: 15px auto;
+	border: 0;
+	background: linear-gradient(to right, rgba(210,167,57,0)0%, rgba(210,167,57,0.7)50%, rgba(210,167,57,0)100%);
+}
+.main-middle4-section h2{
+	color: #828282;
+	font-size: 2.1875em;
+	text-align: center;
+	margin-bottom: 20px;
+}
+.main-middle4-section{
+	margin:40px auto 50px auto; 
+}
+#gall {
+    
+    margin: 10px auto;
+    height: 500px;
+	padding: 20px;
+	background-color:#333;
+  margin-bottom: 170px;
+}
+#large {
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+	background-image: url("../i/terrestrial/loader.gif");
+    display: table;
+    margin: 10px auto;
+    }
+#large h3{
+	margin: 15px auto 20px auto;
+    color: #d2a739;
+    text-decoration: underline;
+    text-align: center;
+    font-size: 1.5em;
+}
+#large img{
+    border: 2px solid lemonchiffon;
+    border-radius: 5px;
+ 
+}
+#little {
+	width: 100%;
+	margin: 15px auto 10px auto;  
+}
+#little a img{
+    border: 1px solid #828282;
+    border-radius: 3px;
+    margin-bottom: 10px;
+   margin-right: 20px;
+    margin-top: 10px;
+    width: 10%;
+}
+
+
+/* Видео  */
+.video-asus{
+	background: url(../images/video.jpg)center top no-repeat;
+	padding: 40px 0 16px 0;
+	background-size: cover;
+}
+.video-center{
+	text-align: center;
+	color: white;
+	margin: 0 auto;
+}
+.video-center img{
+	cursor: pointer;
+}
+.video-center h2{
+	font-size: 2.1975em;
+	margin: 30px auto 40px auto;
+	text-shadow: 1px 1px 2px black, 0 0 1em red;
+}
+.video-center p{
+	font-size: 1.125em;
+	padding: 40px 0 40px 0;
+	text-align: center;
+	line-height: 2;
+	color: burlywood;
+	text-shadow: 1px 1px 2px black, 0 0 1em red;
+}
+.map-ifr{
+	position:relative; 
+	padding-bottom:32%; 
+	height:0; 
+	overflow:hidden;
+}
+.map-ifr iframe{
+	position: absolute; 
+	width:100%; 
+	height:100%; 
+	top:0; 
+	left:0; 
+}
+
+/*      Заказать билет        */
+.drivers-100{
+	background:#3f0000; 
+	color:rgb(214, 0, 0); 
+	padding:28px 0;
+	text-align: center;
+}
+.drivers-100 h3{
+	text-align: center;
+	font-size:3.375em; 
+	text-transform:uppercase; 
+}
+a.order-now{
+	border: 1px solid rgb(71, 70, 62);
+	border-radius: 5px;
+	font-size: 1.25em;
+	font-weight: 600;
+	color:#fff;
+	padding: 18px;
+	margin-top: 15px;
+	text-decoration: none;
+	display: inline-block;
+}
+a:visited.order-now{
+	color: #fff;
+}
+a:hover.order-now{
+	color: #00a8ff;
+	background: rgb(177, 19, 51);
+}
+
+a:active.order-now{
+	color: #0a0853;
+	background: red;
+} 
+
+/*    / ЗАКАЗАТЬ      */
+
+.contalt-asus{
+	position: relative;
+	height: 570px;
+}
+.contakt-form{
+	position: absolute;
+	bottom: 90px;
+	width: 300px;
+	left: 40%;
+	/* margin-left: -150px; */
+	box-sizing: border-box;
+	padding: 18px 25px 20px 25px;
+	border-radius: 5px;
+	background: rgba(0, 128, 0, 0.6);
+}
+.contakt-form h2{
+	color: #fff;
+	text-align: center;
+	font-size: 2em;
+	margin-bottom: 18px;
+}
+
+.foot-email{
+	width:100%;  
+	padding:6px 15px;
+	 margin-bottom:14px; 
+	font-size:0.75em; 
+	box-sizing:border-box; 
+	border:none;
+	border-radius: 4px;
+	text-align: center;
+	}
+
+.food-tick{
+	margin-bottom:10px; 
+	font-size:1.25em; 
+	color: #fff;
+	text-align: center;
+	
+}
+	
+.foot-textarea{
+	width:100%;  
+	padding:6px 15px; 
+	margin-bottom:14px; 
+	font-size:0.75em; 
+	box-sizing:border-box;
+	border:none;
+	border-radius: 4px;
+	text-align: center;
+	height: 130px;
+	font-family: Verdana, Geneva, Tahoma, sans-serif;
+	}
+.foot-submit{
+	color:#fff;
+	font-weight: 600;
+	padding:6px 15px; 
+	margin:10px auto 10px auto; 
+	display: block;
+	font-size:0.8em;
+	border:none; 
+	border-radius: 5px;
+	background:#333; 
+	cursor:pointer;
+	text-align: center;
+	}
+
+
+/*      Футер          */
+.foot{
+	background:#333; 
+	padding:38px 0;
+	text-align: center;
+}
+.foot .middle4-article a{
+	text-decoration: none;
+	color: #828282;
+}
+.foot .middle4-article a:hover{
+	color: #00a8ff;
+}
+	
+
+/*      /Футер          */
+
+.bounce{
+	animation-iteration-count: infinite;
+}
+
+/* Оптимизания */
+
+@media screen and (max-width:1370px){
+	.video-center h2{
+		font-size: 1.5em;
+		margin: 15px auto 30px auto;
+	}
+	.video-center p{
+		font-size: 1em;
+		padding: 30px 0 40px 0;
+	}
+}
+
+@media screen and (max-width:1170px){
+	.video-center h2{
+		font-size: 1.3em;
+		margin: 15px auto 30px auto;
+	}
+	.video-center p{
+		font-size: 0.8em;
+		padding: 30px 0 40px 0;
+	}
+		.drivers-100 h3{
+		font-size:2.375em; 
+		}	
+		a.order-now{
+			font-size: 1.25em;
+			padding: 14px;
+		}
+}
+@media screen and (max-width:1060px){
+	#gall{
+		margin-bottom: 240px;
+	}
+}
+
+@media screen and (max-width:970px){
+	.drivers-100 h3{
+		float:none; 
+		text-align:center;
+	}
+	.drivers-form{
+		float:none; 
+		margin:16px auto 0  auto; 
+		display:table;
+	}
+	.my-slider ul li h1{ 
+		font-size:30px; 
+		margin-bottom: 15px;
+	}
+	.clider-cover{
+		left: 29%;	
+	}
+	.my-slider ul li p{ 
+		font-size:18px; 
+		top:200px;
+	}
+	.my-slider ul li span{ 
+		font-size:14px; 
+		margin-top: 10px;
+	}
+	.download-top{
+		font-size:14px; 
+		padding: 13px 35px;
+		margin-top: 30px;
+	}
+}
+
+@media screen and (max-width:840px){
+	.main-middle3 article a{
+		font-size:1.25em;
+
+	}
+	.main-middle3 article p{
+		font-size:0.75em;
+		line-height: 1.2;
+	}
+	.gold-text{
+		font-size:1.1em;
+	}
+	.main-middle3 article h2{
+		font-size:1.1em; 
+		margin-bottom:10px; 
+	}
+	.main-middle3{
+		margin:10px auto 20px auto;
+	}
+		#gall{
+			margin-bottom: 200px;	
+	}	
+}
+
+@media screen and (max-width:780px){
+	.middle4-article article{
+		width:45%;
+		margin:0 1.5% 25px 1.5%; 
+	}
+	.middle4-article article:last-child{
+		margin:0 1.5% 25px 1.5%;
+	}
+	.main-middle3 article{
+		width:45%;
+		margin:0 1.5% 25px 1.5%; 
+	}
+	.main-middle3 article:last-child{
+		margin:0 1.5% 25px 1.5%;
+	}
+	.clider-cover{
+		left: 25%;	
+	}
+}
+
+@media screen and (max-width:700px){
+	.clider-cover{
+		left: 20%;	
+	}
+	.my-slider ul li h1{ 
+		font-size:20px; 
+		margin-bottom: 11px;
+		padding-left: 30px;
+	}
+	.my-slider ul li p{ 
+		font-size:14px; 
+		top:150px;
+	}
+	.my-slider ul li span{ 
+		font-size:14px; 
+		margin-top: 10px;
+	}
+	.download-top{
+		font-size:11px; 
+		padding: 10px 25px;
+		margin-top: 30px;
+	}	
+	#gall{
+		margin-bottom: 200px;
+}
+#little a img{
+	width: 12%;	
+}
+
+}
+
+@media screen and (max-width:640px){
+	.search-top{
+		float: right; 
+		border-bottom:1px solid #d3d3d2;
+		border-top:1px solid #d3d3d2; 
+		padding:6px 0;
+	}
+	.contakt-form{
+		left: 20%;
+	}
+	.clider-cover{
+		left: 10%;	
+	}
+	.download-top{
+		margin-top: 0;
+	}
+	
+}
+@media screen and (max-width:600px){
+
+	.header-t{
+		padding: 0px 0px 3px 10px;
+	
+	}
+	.clider-cover {
+		left: 28%;
+		top: 33%;
+	}
+	.my-slider ul li h1{ 
+	
+		padding-left: 10px;
+	}
+	.menu {
+		margin: 0 auto;
+		display: table;
+		float: none;
+	}
+	.main-middle3 article{
+		width:95%; 
+		float: none; 
+		margin:0 2.5% 25px 2.5%; 
+	}
+	.main-middle3 article:last-child{
+		margin:0 2.5% 25px 2.5%;
+	}
+	.main-middle3 article h2{
+		text-align:center;
+	}
+	.main-middle3 article p{
+		text-align:center;
+	}
+	.main-middle3 article img{
+		width:25%;
+	}
+	
+	.my-slider ul li h1{ 
+		font-size:16px; 
+		margin-bottom: 4px;
+	}
+	.my-slider ul li p{ 
+		font-size:10px; 
+		top:150px;
+	}
+	.my-slider ul li span{ 
+		font-size:8px; 
+		margin-top: 8px;
+	}
+	.download-top{
+		font-size:7px; 
+		padding: 5px 11px;
+		margin-left: 10px;
+		margin-top: 15px;
+	}	
+	.asus{
+		float: none; 
+		margin:0 auto 1% auto; 
+		display:table; 
+		}	
+	#little a img{
+		width: 14%;	
+	}
+}
+@media screen and (max-width:565px){
+	#little a img{
+		width: 16%;	
+	}
+}
+@media screen and (max-width:540px){
+	#gall{
+		margin-bottom: 170px;	
+	}	
+}
+@media screen and (max-width:505px){
+	.header-t{
+		padding:5px 0 10px 0;
+	}
+	.my-slider ul li h1{ 
+	
+		padding-left: 0px;
+	}
+	.clider-cover{
+		top: 36%;
+	}
+	#gall{
+		margin-bottom: 140px;	
+	}
+}
+@media screen and (max-width:450px){
+	.clider-cover {
+		left: 8%;
+		top: 39%;
+	}
+	.my-slider ul li h1 {
+		padding-left: 55px;
+	}
+	.download-top {
+		font-size: 6px;
+		padding: 4px 10	px;		
+		margin-left: 10px;
+		margin-top: 10px;
+	}
+	#gall{
+		margin-bottom: 70px;	
+	}
+}
+@media screen and (max-width:420px){
+	.my-slider ul li p{ 
+		font-size:9px; 
+		top:140px;
+	}
+}
+
+@media screen and (max-width:390px){
+	.my-slider ul li h1{
+		font-size:  14px;
+	}
+	.my-slider ul li p{
+		font-size:1.3em; 
+		top:70px; 
+		color:#0080FF;
+	}
+	.middle4-article article{
+		width:95%; 
+		float: none; 
+		margin:0 2% 25px 2%; 
+	}
+	.middle4-article article:last-child{
+		width:95%; 
+		float: none; 
+		margin:0 2% 25px 2%;
+	}
+	.contakt-form{
+		left: 5%;
+	}
+}
+@media screen and (max-width:315px){
+	.my-slider ul li h1{
+		font-size:1.5em;top:20px; left:20%;
+	}
+	.my-slider ul li p{
+	font-size:1em; top:50px; left:20%; font-weight:bold;
+	}
+	.drivers-100{
+	padding:15px 0;
+	}
+	.drivers-form{
+	float: none; margin:16px  auto 0  auto; display:table;
+	}
+	.drivers-models{
+	float: none; width:95%; margin:0 2.5% 10px 2.5%;
+	}
+	.drivers-submit{
+	margin-left:2.5%;
+	}
+	.contakt-form{
+		left: 1%;
+	}
