@@ -1,1 +1,1 @@
-[# mk](https://andreilazerko.github.io/mk/)
+[# mk](https://andreilazerko.github.io/mk/MK)
